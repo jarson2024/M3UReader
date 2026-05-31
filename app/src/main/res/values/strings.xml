@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">M3U Reader</string>
-    <string name="btn_testar">Testar</string>
+    <string name="hint_url">Cole a URL da lista .m3u</string>
+    <string name="btn_carregar_url">Carregar da URL</string>
+    <string name="btn_abrir_arquivo">Abrir arquivo .m3u</string>
+    <string name="status_inicial">Carregue uma lista por URL ou abra um arquivo .m3u</string>
+    <string name="carregando">Carregando…</string>
+    <string name="nenhum_canal">Nenhum canal encontrado na lista</string>
+    <string name="canais_encontrados">%1$d canais encontrados</string>
+    <string name="erro_url_vazia">Digite uma URL primeiro</string>
+    <string name="erro_carregar">Erro ao carregar a lista: %1$s</string>
 </resources>
