@@ -1,0 +1,8 @@
+# Ensure the Gradle wrapper files keep correct, stable line endings across OSes.
+# The Unix launcher must use LF so it runs on Linux/macOS and CI.
+gradlew         text eol=lf
+*.sh            text eol=lf
+# The Windows launcher must use CRLF.
+gradlew.bat     text eol=crlf
+# Treat the wrapper jar (and other jars) as binary so they are never altered.
+*.jar           binary
