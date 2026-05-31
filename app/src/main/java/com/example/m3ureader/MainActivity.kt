@@ -1,5 +1,6 @@
 package com.example.m3ureader
 
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
@@ -32,7 +33,11 @@ class MainActivity : AppCompatActivity() {
         val recycler = findViewById<RecyclerView>(R.id.recyclerChannels)
 
         adapter = ChannelAdapter { channel ->
-            Toast.makeText(this, channel.url, Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, PlayerActivity::class.java).apply {
+                putExtra(PlayerActivity.EXTRA_URL, channel.url)
+                putExtra(PlayerActivity.EXTRA_NAME, channel.name)
+            }
+            startActivity(intent)
         }
         recycler.layoutManager = LinearLayoutManager(this)
         recycler.adapter = adapter
